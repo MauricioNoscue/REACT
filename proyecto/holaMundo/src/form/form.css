@@ -1,0 +1,12 @@
+.sec-from{
+    height: 40vh;
+    width: 80vh;
+    flex-direction: column;
+    border: 1px solid #ff0000; 
+    margin-left: 200px;
+}
+.form{
+    display: flex;  
+    flex-direction: column;
+    gap: 1vh;
+}

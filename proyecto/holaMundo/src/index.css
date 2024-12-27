@@ -1,0 +1,15 @@
+body{
+    background: #222;
+}
+.componente1 {
+    display: grid;
+    flex-direction: column;
+    gap: 9px;
+    place-content: center;
+    font-family: system-ui;
+    margin-right: 20vh;
+}
+
+.formulario{
+    margin-left: 200px;
+}

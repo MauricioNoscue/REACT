@@ -1,10 +1,10 @@
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { Elemento } from "./componentes/Elemento";
-import { calcularVacio } from "./calcularVacio";
-import { Modal } from "./componentes/modal";
-import "bootstrap/dist/css/bootstrap.min.css"; 
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import "./App.css";
+import { Elemento } from "../componentes/Elemento";
+import { calcularVacio } from "../componentes/calcularVacio";
+import { Modal } from "../componentes/modal";
+
+import "../tabla.css"
 
 const Fila = ({ children }) => {
   return <div className="col-12 row filas-principales">{children}</div>;
@@ -14,7 +14,7 @@ const Seccion = ({ children }) => {
   return <div className="seccion col-4 row">{children}</div>;
 };
 
-function App() {
+function TablaPeriodicaC() {
   const filas = [1, 2, 3, 4, 5, 6, 7];
   const seccion = [1, 2, 3];
   const element = [1, 2, 3, 4, 5, 6];
@@ -39,6 +39,7 @@ function App() {
   return (
 
       <div className="containerTabla">
+        <Link to="/home">volver</Link>
       <h1>PERIODIC TABLE CHART</h1>
       
       {filas.map((indexfila) => (
@@ -80,4 +81,11 @@ function App() {
   );
 }
 
-export default App;
+
+export const Tbla = ()=>{
+    return(
+        <TablaPeriodicaC></TablaPeriodicaC>
+    )
+}
+
+

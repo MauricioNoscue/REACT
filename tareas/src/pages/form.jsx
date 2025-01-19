@@ -1,12 +1,9 @@
-import { Formulario } from "../componentes/formulario";
-import { Link } from "react-router-dom";
+import { PrincipalForms } from "../componentes/crud/principalFormulario";
 
 export const Pague2 = ()=>{
     return(
         <>
-      
-       <Link to ='/home'>volver</Link>
-        <Formulario></Formulario>
+        <PrincipalForms></PrincipalForms>
         </>
     )
 }
